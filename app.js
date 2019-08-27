@@ -1,14 +1,13 @@
 console.log("noget");
 
 // INDLÆS EXPRESS MODUL
-// indlæs express modulet, dette er vores serverprogram
 const express = require('express');
 // opret en express applikation 
 const app = express();
 
 
 // INDLÆS MORGAN MODUL
-/* aktiver morgans serverside log  */
+/* aktiver serverside log  */
 const logger = require('morgan');
 app.use(logger('dev', {
    // hvis ALLE requests skal ses i loggen, udkommenter næste linje
