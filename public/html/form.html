@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="page-wrapper">
+        <div id="content-wrapper--contactform" class="">
+            <div id="html-templates" class="">
+                <div id="formular-submit-message" class="formular-submit-message">
+                    <h2 class="formular-submit-message__heading">Tak fordi du kontaktede os, vi vender snarest muligt tilbage</h2>
+                </div>
+            </div>
+
+            <div id="formular-submit-message__area">
+                <!-- clone to heere -->
+            </div>
+
+            <form id="formular" class="formular">
+                <label for="nameinput">Fornavn</label>
+                <input 
+                type="text" 
+                name="nameinput" 
+                id="nameinput"
+                >
+                <p class="nameinput__error"></p>
+
+                <label for="surnameinput">Efternavn</label>
+                <input 
+                type="text" 
+                name="surnameinput" 
+                id="surnameinput">
+                <p class="surnameinput__error"></p>
+
+                <label for="mailinput">e-mail</label>
+                <input 
+                type="text" 
+                name="mailinput" 
+                id="mailinput"
+                >
+                <p class="mailinput__error"></p>
+
+                <label for="birthdayinput">Fødselsdag</label>        
+                <input 
+                type="date" 
+                name="birthdayinput" 
+                id="birthdayinput"
+                >
+                <p class="birthdayinput__error"></p>
+
+                <label for="tlfinput">Telefon</label>
+                <input 
+                type="tel" 
+                name="tlfinput" 
+                id="tlfinput">
+                <p class="tlfinput__error"></p>
+
+                <button 
+                type="submit"
+                name="submitbutton"
+                >Send</button>
+            </form>
+        </div>
+    </div>  
+    <script src="../scripts.js"></script>
+    <script src="../js/valider.js"></script>
+    
+</body>
+</html>
+
+<!-- HTML VALIDERING AF TLF-INPUT, HVIS ALT ANDET GLIPPER. SE PATTERN -->
+<!-- <label for="tlfinput">Telefon</label>
+<input type="tel" 
+name="tlfinput" 
+id="tlfinput"
+pattern="[0-9]{8}"
+required>
+<p class="tlfinput__error"></p> -->

@@ -1,0 +1,79 @@
+:root {
+    --margin-top: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*  HTML TEMPLATES */
+/* hides the templates */
+#html-templates {
+    display: none;
+}
+
+/* templates active */
+.submit-message__active {
+    min-height: 100vh;
+    text-align: center;
+    margin-top: var(--margin-top);
+}
+
+
+/* page-wrapper */
+/* #page-wrapper {
+} */
+
+
+/* formular layout */
+.formular {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.formular input, .formular textarea {
+    width: 100%;
+    margin: 0 0 1em 0;
+}
+
+.formular button {
+     width: 100%;
+}
+
+
+
+
+/* FEJLBESKEDERNE */
+
+/*JS viser/skjuler alle classer som ender på __error*/
+[class$="__error"] {
+    display: none;
+    background-color: grey;
+    padding: 0.3em;
+    margin: .35em 0 1em 0;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+
+/****dette er en grå trekant, som sidder på fejlmeddelelsen *****/
+[class$="__error"]::before { /*NB! Display arves fra class"error"]*/
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid grey;
+    position: absolute;
+    left: 1em;
+    top: -10px; 
+}
+
+
+@media(min-width:415px) {
+    label, input, textarea, p {
+        width: 70%;
+    }
+}
+

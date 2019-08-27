@@ -1,0 +1,73 @@
+
+<!-- MAIN CONTENT -->
+<main class="main_contact-us">
+
+    <% if(returnMessageArray != 'undefined') { %> 
+        <div class="returnmessage-area">
+            <h2 class="returnmessage-area__message"><%=returnMessageArray%></h2>
+            <button class="returnmessage-area__button">
+                <a href="/contact" class="returnmessage-area__refresh-form">Til formular</a>
+            </button>
+        </div>
+    <%} else {%>
+    <!-- contactform wrapper -->
+    <div class="contactform-wrapper">
+        <section class="contactform-headings-section">
+            <h2 class="contactform-heading">CONTACT US</h2>
+            <p class="contactform-subheading">Submit a support ticket by filling in the form below</p>
+        </section>
+
+        <form method="post" class="contactform" onsubmit="return valider(this)">
+            <div class="contactform_input-wrapper">
+                <label for="contactformname"></label>
+                <input 
+                type="text" 
+                name="contactformname" 
+                id="contactform_name" 
+                class="contactform_name" 
+                placeholder="Name" 
+                value="<%= typeof reqbody != 'undefined' ? reqbody.contactformname : '' %>">
+            </div>
+    
+
+            <div class="contactform_input-wrapper">
+                <label for="contactformemail"></label>
+                <input 
+                type="email" 
+                name="contactformemail" 
+                id="contactform_email" 
+                class="contactform_email" 
+                placeholder="Email" 
+                value="<%= typeof reqbody != 'undefined' ? reqbody.contactformemail : '' %>">
+            </div>
+
+            <div class="select-section">
+                <select name="contactformsubject" id="select-box" class="select-box" >
+                    <!-- her skal jeg lave dynamisk indhold i options -->
+                    <% if(messagesubjects != 'undefined') { %>
+                        <% messagesubjects.forEach(subject => { %>
+                        <option
+                        value="<%=subject.messagecategory_id%>">                       <%=subject.messagecategory_name%>
+                        </option>
+                        <%})%>
+                    <%}%>
+                </select>
+            </div>
+
+            <div class="contactform_input-wrapper">
+                <textarea 
+                id="contactform__message" 
+                name="contactformmessage" 
+                class="contactform__message" 
+                cols="30" 
+                rows="10" 
+                placeholder="Message"><%= typeof reqbody != 'undefined' ? reqbody.contactformmessage : ''%></textarea>
+            </div>
+            
+            <button class="contactform_submit-button" type="submit">SEND</button>
+        </form>
+
+        <div id="besked"></div>
+    </div>
+    <% } %>
+</main>
