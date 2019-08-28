@@ -1,0 +1,40 @@
+/* GRIDS
+----------------------------------------------------*/
+
+/* VARIABLES
+------------------------------------*/
+
+:root {
+    --font-heading: 'Livvic', sans-serif;
+    --font-subheading: 'Gayathri', sans-serif;
+    --font-decoration: 'Open Sans', sans-serif;
+
+}
+
+html {
+    font-size: 10px;
+}
+
+
+/* FRONTPAGE
+------------------------------------*/
+
+/* decoration */
+.square {
+    font-family: var(--font-decoration);
+}
+
+
+/* navigation */
+.list {
+    list-style-type: none;
+}
+
+.menu-right__link, .menu-left__link {
+    font-family: var(--font-heading);
+}
+
+.menu-right__explainer, .menu-left__explainer {
+    margin: 0.5rem 0;
+    font-family: var(--font-subheading);
+}
