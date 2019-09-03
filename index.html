@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Gayathri|Livvic:300,400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-<body>
+<body class="body">
     <!-- page grid -->
     <div class="grid frontpage">
         <!--  -->
@@ -16,45 +16,50 @@
 
             <header class="header">
                 <!-- headings -->
-                <h2 class="heading">Nanna´s</h2>
-                <h1 class="heading">Portfolio</h1>
+                <h2 class="heading heading-part1">my</h2>
+                <h1 class="heading heading-part2">portfolio</h1>
     
                 <!-- excess  -->
-                <div class="square square-1">A</div>
-                <div class="square square-2">R</div>
-                <div class="square square-3">T</div>
+                <div class="square square-1">
+                    <p class="square__letter">A</p>
+                </div>
+                <div class="square square-2">
+                    <p class="square__letter">R</p>
+                </div>
+                <div class="square square-3">
+                    <p class="square__letter">T</p>
+                </div>
     
                 <!-- page navigation -->
                 <nav class="frontpage-navigation">
-                    <!-- right menu -->
-                    <ul class="list menu-right">
-                        <li class="menu-right__item">
-                            <a href="#" class="menu-right__link">Send me a note</a>
-                            <p class="menu-right__explainer">My version of a contactform</p>
-                        </li>
-                        <li class="menu-right__item">
-                            <a href="#" class="menu-right__link">Send me a note</a>
-                            <p class="menu-right__explainer">My version of a contactform</p>
-                        </li>
-                        <li class="menu-right__item">
-                            <a href="#" class="menu-right__link">Send me a note</a>
-                            <p class="menu-right__explainer">My version of a contactform</p>
-                        </li>
-                    </ul>
-    
                     <!-- left menu -->
                     <ul class="list menu-left">
                         <li class="menu-left__item">
-                            <a href="#" class="menu-left__link">Send me a note</a>
-                            <p class="menu-left__explainer">My version of a contactform</p>
+                            <a href="#" class="menu_link menu-left__link">Find Home</a>
+                            <p class="menu-left__explainer">Even at nighttime</p>
                         </li>
                         <li class="menu-left__item">
-                            <a href="#" class="menu-left__link">Send me a note</a>
-                            <p class="menu-left__explainer">My version of a contactform</p>
+                            <a href="public/html/form.html" class="menu_link menu-left__link">Send me a note</a>
+                            <p class="menu-left__explainer">My version of a form</p>
                         </li>
                         <li class="menu-left__item">
-                            <a href="#" class="menu-left__link">Send me a note</a>
-                            <p class="menu-left__explainer">My version of a contactform</p>
+                            <a href="#" class="menu_link menu-left__link">Send me a file</a>
+                            <p class="menu-left__explainer">See this fileloader</p>
+                        </li>
+
+                    </ul>
+                    <!-- right menu -->
+                    <ul class="list menu-right">
+                        <li class="menu-right__item">
+                            <a href="#" class="menu_link menu-right__link">Something</a>
+                            <p class="menu-right__explainer">Lorem ipsum</p>
+                        </li>
+                        <li class="menu-right__item">
+                            <a href="#" class="menu_link menu-right__link">Something</a>
+                            <p class="menu-right__explainer">Lorem ipsum</p>
+                        <li class="menu-right__item">
+                            <a href="#" class="menu_link menu-right__link">Something</a>
+                            <p class="menu-right__explainer">Lorem ipsum</p>
                         </li>
                     </ul>
                 </nav>
@@ -62,8 +67,10 @@
         </div>
 
         <div class="grid__half-page frontpage__column-2">
-            <main class="main">
-                <img src="public/IMG/test.jpg" alt="featured image" class="featured-image">
+            <main class="main main--frontpage">
+                <figure class="featured-image-wrapper">
+                    <img src="public/IMG/test.jpg" alt="featured image" class="featured-image">
+                </figure>
             </main>
         </div>
     </div> <!-- pagewrapper ends -->

@@ -2,9 +2,6 @@
     --margin-top: 4rem;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 /*  HTML TEMPLATES */
 /* hides the templates */
@@ -42,8 +39,6 @@
 }
 
 
-
-
 /* FEJLBESKEDERNE */
 
 /*JS viser/skjuler alle classer som ender på __error*/
@@ -71,9 +66,17 @@
 }
 
 
-@media(min-width:415px) {
-    label, input, textarea, p {
-        width: 70%;
+/*---------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------*/
+
+
+/* CONTACT FORM PAGE
+------------------------------------*/
+
+/* @media(min-width: 800px) {
+    label, input, textarea, p, button {
+        width: 40%;
     }
-}
+} */
 

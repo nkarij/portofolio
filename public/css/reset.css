@@ -1,13 +1,21 @@
+:root {
+    --body-desktop-height: 95vh;
+    --body-desktop-width: 100vw;
+}
+
 * {
     box-sizing: border-box;
 }
 
-html {
+/* html {
     height: 100%;
-}
+}  */
 
 body {
-    min-height: 100vh;
+    height: var(--body-desktop-height);
+    width: var(--body-desktop-width);
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -15,4 +23,7 @@ a {
     text-decoration: none;
 }
 
-
+ul {
+    list-style-type: none;
+    padding: 0;
+}

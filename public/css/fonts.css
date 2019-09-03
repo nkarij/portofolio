@@ -8,7 +8,8 @@
     --font-heading: 'Livvic', sans-serif;
     --font-subheading: 'Gayathri', sans-serif;
     --font-decoration: 'Open Sans', sans-serif;
-
+    --font-color-primary: #464646;
+    --font-color-scnd: #4c5861;
 }
 
 html {
@@ -17,24 +18,51 @@ html {
 
 
 /* FRONTPAGE
+----------------------------------------------------------------------------*/
+
+/* PAGE HEADINGS
 ------------------------------------*/
-
-/* decoration */
-.square {
-    font-family: var(--font-decoration);
+.heading {
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    /* z-index: 4; */
 }
 
 
-/* navigation */
-.list {
-    list-style-type: none;
-}
+/* NAVIGATION
+------------------------------------*/
 
 .menu-right__link, .menu-left__link {
     font-family: var(--font-heading);
+    color: var(--font-color-primary);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
 }
 
 .menu-right__explainer, .menu-left__explainer {
     margin: 0.5rem 0;
     font-family: var(--font-subheading);
+    color: var(--font-color-scnd);
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* SQUARE DECORATION    
+------------------------------------*/
+
+.square {
+    font-family: var(--font-decoration);
+    text-align: center;
+
+}
+
+.square__letter {
+    font-size: 35rem;
+    color: white;
+    z-index: 4;
+    margin: 0;
 }
