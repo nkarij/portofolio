@@ -20,7 +20,7 @@
   "homepage": "https://github.com/nkarij/portofolip#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "date-and-time": "^0.9.0",
+    "date-and-time": "^0.14.2",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
